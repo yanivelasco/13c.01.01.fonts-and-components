@@ -1,0 +1,366 @@
+/* Resetter */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@700&display=swap');
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/* Color Properties */
+:root {
+  --color-darker: rgb(48, 48, 48);
+  --color-dark: rgb(64, 64, 64);
+  --color-light: rgb(194, 194, 194);
+  --color-lighter: rgb(255, 255, 255);
+  /* you could add an accent color for CTAs and anchor tags ;-) */
+}
+
+/* Fonts */
+html {
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  color: var(--color-darker);
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  margin-block: 1em;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Figtree', sans-serif;
+  line-height: 1.2em;
+  text-align: left;
+  margin-bottom: 1em;
+  font-size: 2em;
+  color: var(--color-light);
+  
+}
+
+h3 {
+  font-family: 'Figtree', sans-serif;
+}
+
+p{
+
+  color: var(--color-dark);
+  font-family: 'Heebo', sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* UI Elements */
+button {
+  display: inline-block;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-lighter);
+  color: var(--color-dark);
+  font-family: 'Figtree', sans-serif;
+  border-radius: 20px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.light_button {
+  background-color: var(--color-lighter);
+  color: var(--color-darker);
+  font-family: 'Figtree', sans-serif;}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 250px;
+  height: 2rem;
+  padding: 0.5rem;
+  text-align: left;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--color-lighter);
+  border-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+/* Menu */
+nav{
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-darker);
+  padding-inline: 2em;
+  padding-block: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Figtree', sans-serif;
+  letter-spacing: .1em;
+}
+
+/* Header */
+header {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-dark);
+  padding-left: 1.6rem;
+}
+
+.header_text {
+  width: 40vw;
+  min-width: 300px;
+}
+
+.header_text h1 {
+  color: var(--color-lighter);
+}
+
+.header_text p {
+  color: var(--color-light);
+}
+
+.header_graphics {
+  width: 35vw;
+  height: 35vw;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: var(--color-darker);
+  margin-block: 1em;
+}
+
+/* Sections */
+#intro {
+  display: flex;
+  min-height: 80vh;
+  padding: 0px 15rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-darker);
+}
+
+.intro_text {
+  width: 40vw;
+  min-width: 450px;
+}
+
+.intro_graphics {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: var(--color-dark);
+}
+
+#cards {
+  min-height: 80vh;
+  padding: 3rem 4rem;
+  background-color: var(--color-light);
+}
+
+#cards h2{
+  margin-bottom: .5em;
+  color: var(--color-darker);
+  font-size: 2em;
+}
+
+.cardP{
+  font-size: 1.1em;
+}
+
+.card_title{
+  font-weight: bold;
+  font-size: .9em;
+}
+.card_slogan{
+  opacity: 80%;
+  font-size: .85em;
+}
+.card_mail a{
+  text-decoration: none;
+  color: var(--color-dark);
+  font-size: .8rem;
+  opacity: 70%;
+  text-align: right;
+  font-style: oblique;
+  
+}
+
+.card_mail{
+  margin-top: .5em;
+}
+
+#card_container {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+.card img{
+  width: 13rem;
+  height: 13rem;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* margin-top: 4em; */
+}
+
+.card{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: min-content;
+}
+
+.card p{
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+
+.card h3{
+  margin-bottom: .4em;
+}
+
+.removeAcceptBTN{
+  display: flex;
+  text-align: right;
+  justify-content: end;
+  margin-bottom: auto;
+  margin-top: 2em;
+  
+  
+}
+
+.card input{
+  opacity: 80%;
+  color: var(--color-dark);
+  padding: .7em 1em;
+  margin-left: 1em;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Figtree', sans-serif;
+  cursor: pointer;
+  background-color: var(--color-lighter);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+#card_template{
+  background-color: var(--color-dark);
+}
+
+
+#info {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-dark);
+}
+
+.learnMore {
+  width: fit-content;
+  align-self: end;
+  
+  
+}
+
+.info_text {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  min-width: 300px;
+}
+
+.info_text p{
+  color: var(--color-light);
+}
+
+.info_text h2{
+  color: var(--color-lighter);
+}
+
+#contact {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-darker);
+}
+
+#contact h2{
+  width: 50vw;
+}
+
+#contact input{
+  width: 30vw;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 10vh 4rem;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--color-lighter);
+}
+
+footer h2, footer h3{
+  color: var(--color-darker);
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+footer a {
+  color: var(--color-dark);
+  text-decoration: none;
+  font-family: 'Heebo', sans-serif;
+  font-size: .9em;
+  line-height: 2em;
+}
+
+.logoFooter{
+  font-size: 2em;
+  letter-spacing: .1em;
+  line-height: 1em;
+}
+
+.contactFooter{
+  margin-bottom: 4em;
+}
+
+
+footer section {
+  display: flex;
+  max-width:70vw;
+  align-items: top;
+  flex-wrap: wrap;
+  column-gap: 3em;
+  row-gap: 3em;
+  height: fit-content;
+  margin-top: .5em;
+}
+
+footer section div {
+  margin: 0px 1rem 1rem 1rem;
+}
